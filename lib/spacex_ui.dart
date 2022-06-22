@@ -1,3 +1,5 @@
 library spacex_ui;
 
-export 'src/spacex_ui.dart';
+export 'src/colors.dart';
+export 'src/spacings.dart';
+export 'src/theme.dart';
