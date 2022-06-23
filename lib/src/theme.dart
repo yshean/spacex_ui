@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spacex_ui/spacex_ui.dart';
 
 /// Namespace for the SpaceX [ThemeData]
 class SpaceXTheme {
@@ -7,22 +8,20 @@ class SpaceXTheme {
     return ThemeData(
       colorScheme: ColorScheme.fromSwatch().copyWith(
         brightness: Brightness.dark,
-        secondary: Colors.white,
+        secondary: SpaceXColor.secondary,
       ),
-      primaryColor: Colors.black,
-      scaffoldBackgroundColor: Colors.black,
+      primaryColor: SpaceXColor.primary,
+      scaffoldBackgroundColor: SpaceXColor.backgroundScaffold,
       dividerTheme: const DividerThemeData(
-        indent: 16,
+        indent: SpaceXSpacing.m,
         space: 0,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          primary: Colors.white,
-          onPrimary: Colors.black,
+          primary: SpaceXColor.backgroundPrimaryButton,
+          onPrimary: SpaceXColor.foregroundPrimaryButton,
         ),
       ),
     );
   }
 }
-
-// TODO(yshean): Refer to values from colors.dart and spacings.dart
